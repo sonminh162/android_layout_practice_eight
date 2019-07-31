@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">practice_layout_eight</string>
+    <string name="todo">TODO</string>
+    <string name="search">Search</string>
+    <string name="search_box">search_box</string>
+    <string name="title_example">Good Morning Shishir</string>
+    <string name="today">Today</string>
+    <string name="all_exercises">All Exercises</string>
+    <string name="settings">Settings</string>
+    <string name="item_row_text_example">Diet Recommendation</string>
+    <string name="imgitemrow">imgItemRow</string>
+    <string name="meditation">Meditation</string>
+    <string name="_3_10_min_course">3-10 MIN Course</string>
+    <string name="contentn">Live happier and healthier by learning the fundamentals of meditation and mindfulness</string>
+    <string name="anything">anything</string>
+    <string name="session_01">Session 01</string>
+    <string name="meditation_two">Meditation</string>
+    <string name="anythingelse">anythingelse</string>
+    <string name="basic_2">Basic 2</string>
+    <string name="content_group_tv">Start your deepen you practice</string>
+</resources>

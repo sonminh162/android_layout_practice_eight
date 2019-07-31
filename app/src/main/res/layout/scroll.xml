@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewNew"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/tv_below"
+            android:text="@string/meditation_two"
+            android:layout_marginStart="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp29"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewNew"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/sp17"
+            android:textColor="@color/gulfBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/group"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp89"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="@dimen/dp29"
+            android:background="@drawable/item_row_box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_below" />
+
+        <ImageView
+            android:id="@+id/groupsImg"
+            android:src="@drawable/r2c1"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="@dimen/dp14"
+            app:layout_constraintStart_toStartOf="@id/group"
+            android:layout_marginBottom="@dimen/dp11"
+            android:layout_marginTop="@dimen/dp10"
+            app:layout_constraintBottom_toBottomOf="@id/group"
+            app:layout_constraintTop_toTopOf="@id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp0"
+            android:contentDescription="@string/anythingelse" />
+
+        <TextView
+            android:id="@+id/groupsTv"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/basic_2"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp19"
+            app:layout_constraintTop_toTopOf="@id/group"
+            app:layout_constraintStart_toEndOf="@id/groupsImg"
+            android:textColor="@color/paynesGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/content_group_tv"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/paynesGrey"
+            android:layout_marginTop="@dimen/dp13"
+            app:layout_constraintStart_toStartOf="@id/groupsTv"
+            app:layout_constraintTop_toBottomOf="@id/groupsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@drawable/ic_lock"
+            android:layout_marginEnd="@dimen/dp26"
+            android:layout_marginTop="@dimen/dp17"
+            app:layout_constraintEnd_toEndOf="@id/group"
+            app:layout_constraintTop_toTopOf="@id/group"
+            android:layout_width="@dimen/dp17"
+            android:layout_height="@dimen/dp23" />
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</ScrollView>

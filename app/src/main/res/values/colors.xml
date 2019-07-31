@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="cloudBurst">#373D4A</color>
+    <color name="paleOyster">#9D8C70</color>
+    <color name="gainSbroro">#E2E2E2</color>
+    <color name="seashell">#FFF8F0</color>
+    <color name="warmGrey">#979797</color>
+    <color name="white">#ffffff</color>
+    <color name="cinnabar">#EB4C38</color>
+    <color name="brownGrey">#9d8c70</color>
+    <color name="watusi">#f5ceb8</color>
+    <color name="ghost">#C6C6C7</color>
+    <color name="midnightExpress">#222b45</color>
+    <color name="waxFlower">#e2b39b</color>
+    <color name="whiteSmoke">#f8f8f8</color>
+    <color name="bayOfMany">#33395f</color>
+    <color name="gulfBlue">#38415c</color>
+    <color name="melrose">#c7b8f5</color>
+    <color name="paynesGrey">#393c50</color>
+
+
+</resources>
