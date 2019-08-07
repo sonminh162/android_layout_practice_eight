@@ -38,28 +38,6 @@ public class Status {
         this.colorTop = colorTop;
     }
 
-    public Status(int avatar, String userName, String time, int img, String like_number, String comment_number, int colorTop) {
-        this.avatar = avatar;
-        this.userName = userName;
-        this.time = time;
-        this.img = img;
-        this.like_number = like_number;
-        this.comment_number = comment_number;
-        this.colorTop = colorTop;
-    }
-
-    public Status(int avatar, String userName, String time, String content, int img, String like_number, String comment_number, int color, int colorTop) {
-        this.avatar = avatar;
-        this.userName = userName;
-        this.time = time;
-        this.content = content;
-        this.img = img;
-        this.like_number = like_number;
-        this.comment_number = comment_number;
-        this.color = color;
-        this.colorTop = colorTop;
-    }
-
     public Status(int avatar, String userName, String time, String content, String like_number, String comment_number, int color, int colorTop) {
         this.avatar = avatar;
         this.userName = userName;

@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
-        tools:ignore="LabelFor,RtlSymmetry,TextFields"
+        tools:ignore="LabelFor,RtlSymmetry,TextFields,UnusedAttribute"
         android:autofillHints="" />
 
     <EditText
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="@id/email"
         app:layout_constraintStart_toStartOf="@id/email"
         app:layout_constraintTop_toBottomOf="@id/email"
-        tools:ignore="LabelFor,RtlSymmetry"
+        tools:ignore="LabelFor,RtlSymmetry,UnusedAttribute"
         android:autofillHints="" />
 
     <TextView

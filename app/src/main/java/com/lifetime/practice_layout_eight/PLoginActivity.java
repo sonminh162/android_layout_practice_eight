@@ -22,9 +22,9 @@ public class PLoginActivity extends AppCompatActivity {
         customActionBar();
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.p_login);
+        setContentView(R.layout.p_login_new);
 
-        login = findViewById(R.id.login_real);
+        login = findViewById(R.id.login);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

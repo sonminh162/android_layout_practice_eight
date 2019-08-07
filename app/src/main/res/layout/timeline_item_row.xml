@@ -5,27 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.mikhaellopez.circularimageview.CircularImageView
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/dp31"
         android:layout_marginStart="@dimen/dp90"
-        android:src="@drawable/background_test"
+        android:background="@drawable/background_test"
         android:layout_marginTop="@dimen/dp28"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/avatar"
-        android:layout_width="@dimen/dp61"
-        android:layout_height="@dimen/dp64"
+        android:layout_width="@dimen/dp62"
+        android:layout_height="@dimen/dp62"
         android:contentDescription="@string/anything_2" />
-
-
-    <!--<ImageView-->
-        <!--android:background="@drawable/avatar_example"-->
-        <!--android:layout_marginTop="@dimen/dp28"-->
-        <!--app:layout_constraintTop_toTopOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--android:id="@+id/avatar"-->
-        <!--android:layout_width="@dimen/dp61"-->
-        <!--android:layout_height="@dimen/dp64"-->
-        <!--android:contentDescription="@string/anything_2" />-->
 
     <TextView
         android:id="@+id/user_name"

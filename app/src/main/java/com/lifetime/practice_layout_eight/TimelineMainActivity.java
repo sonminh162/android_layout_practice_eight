@@ -66,8 +66,7 @@ public class TimelineMainActivity extends AppCompatActivity {
 
     private boolean indexOver() {
         index++;
-        if (index == 7) return true;
-        return false;
+        return index == 7;
     }
 
     private void customActionBar() {
