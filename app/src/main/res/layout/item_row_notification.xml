@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timeline_item_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginStart="@dimen/dp90"
+        android:background="@drawable/avatar_example"
+        android:layout_marginTop="@dimen/dp28"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/avatar_notify"
+        android:layout_width="@dimen/dp61"
+        android:layout_height="@dimen/dp64"
+        android:contentDescription="@string/anything_2" />
+
+    <TextView
+        android:id="@+id/user_name_notify"
+        android:fontFamily="sans-serif-medium"
+        android:lineHeight="@dimen/sp20"
+        android:layout_marginBottom="@dimen/dp22"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp30"
+        android:layout_marginStart="@dimen/dp31"
+        app:layout_constraintBottom_toBottomOf="@id/avatar_notify"
+        app:layout_constraintStart_toEndOf="@id/avatar_notify"
+        android:text="@string/user_name_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="@dimen/sp24"
+        android:textColor="@color/dimGray"
+        android:text="@string/notify_example"
+        android:id="@+id/content_timeline_notify"
+        android:layout_marginEnd="@dimen/dp59"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar_notify"
+        app:layout_constraintStart_toStartOf="@id/user_name_notify"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/dimGray"
+        android:textSize="@dimen/sp24"
+        android:text="@string/time_example"
+        android:layout_marginEnd="@dimen/dp56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/user_name_notify"
+        android:id="@+id/time_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <ImageView
+        android:background="@drawable/avatar_example"
+        android:id="@+id/follower_1"
+        android:layout_marginTop="@dimen/dp17"
+        app:layout_constraintTop_toBottomOf="@id/content_timeline_notify"
+        app:layout_constraintStart_toStartOf="@id/content_timeline_notify"
+        android:layout_width="@dimen/dp61"
+        android:layout_height="@dimen/dp64"
+        android:contentDescription="@string/anything_3" />
+
+    <ImageView
+        android:background="@drawable/avatar_example"
+        android:id="@+id/follower_2"
+        android:layout_marginStart="@dimen/dp17"
+        app:layout_constraintTop_toTopOf="@id/follower_1"
+        app:layout_constraintStart_toEndOf="@id/follower_1"
+        android:layout_width="@dimen/dp61"
+        android:layout_height="@dimen/dp64"
+        android:contentDescription="@string/anything_3" />
+
+    <ImageView
+        android:background="@drawable/avatar_example"
+        android:id="@+id/follower_3"
+        android:layout_marginStart="@dimen/dp17"
+        app:layout_constraintTop_toTopOf="@id/follower_2"
+        app:layout_constraintStart_toEndOf="@id/follower_2"
+        android:layout_width="@dimen/dp61"
+        android:layout_height="@dimen/dp64"
+        android:contentDescription="@string/anything_3" />
+
+    <View
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginStart="@dimen/dp0"
+        android:layout_marginTop="@dimen/dp29"
+        android:layout_marginEnd="@dimen/dp59"
+        android:background="@color/spindle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/avatar_notify"
+        app:layout_constraintTop_toBottomOf="@id/follower_1" />
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/navyBlue"
+        app:cardCornerRadius="@dimen/dp14"
+        android:id="@+id/view_circle_notify"
+        android:layout_marginStart="@dimen/dp46"
+        app:layout_constraintBottom_toBottomOf="@id/avatar_notify"
+        app:layout_constraintTop_toTopOf="@id/avatar_notify"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/dp28"
+        android:layout_height="@dimen/dp28"/>
+    
+    <View
+        android:id="@+id/notify_bottom_circle"
+        android:layout_marginTop="@dimen/dp34"
+        android:background="@color/navyBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_circle_notify"
+        app:layout_constraintEnd_toEndOf="@id/view_circle_notify"
+        app:layout_constraintStart_toStartOf="@id/view_circle_notify"
+        android:layout_width="@dimen/dp2"
+        android:layout_height="@dimen/dp0"/>
+
+    <View
+        android:id="@+id/notify_top_circle"
+        android:layout_marginBottom="@dimen/dp34"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/view_circle_notify"
+        app:layout_constraintStart_toStartOf="@id/view_circle_notify"
+        app:layout_constraintBottom_toBottomOf="@id/view_circle_notify"
+        android:layout_width="@dimen/dp2"
+        android:layout_height="@dimen/dp0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

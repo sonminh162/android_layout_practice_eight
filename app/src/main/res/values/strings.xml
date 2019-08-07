@@ -18,4 +18,20 @@
     <string name="anythingelse">anythingelse</string>
     <string name="basic_2">Basic 2</string>
     <string name="content_group_tv">Start your deepen you practice</string>
+    <string name="anything_1">anything_1</string>
+    <string name="anything_2">anything_2</string>
+    <string name="user_name_example">User Name</string>
+    <string name="time_example">2m ago</string>
+    <string name="like_example">199</string>
+    <string name="comment_example">215</string>
+    <string name="title_timeline">Timeline</string>
+    <string name="content_example">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla cursus sodales. Proin hendrerit tempor purus eu posuere Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla cursus sodales. Proin hendrerit tempor purus eu posuere.</string>
+    <string name="notify_example">Has 3 new connections</string>
+    <string name="anything_3">anything_3</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logo_icon">logo</string>
+    <string name="login_button">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="create_account">CREATE ACCOUNT</string>
 </resources>

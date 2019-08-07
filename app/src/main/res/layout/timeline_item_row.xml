@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timeline_item_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_marginStart="@dimen/dp90"
+        android:src="@drawable/background_test"
+        android:layout_marginTop="@dimen/dp28"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/dp61"
+        android:layout_height="@dimen/dp64"
+        android:contentDescription="@string/anything_2" />
+
+
+    <!--<ImageView-->
+        <!--android:background="@drawable/avatar_example"-->
+        <!--android:layout_marginTop="@dimen/dp28"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--android:id="@+id/avatar"-->
+        <!--android:layout_width="@dimen/dp61"-->
+        <!--android:layout_height="@dimen/dp64"-->
+        <!--android:contentDescription="@string/anything_2" />-->
+
+    <TextView
+        android:id="@+id/user_name"
+        android:fontFamily="sans-serif-medium"
+        android:lineHeight="@dimen/sp20"
+        android:layout_marginBottom="@dimen/dp22"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp30"
+        android:layout_marginStart="@dimen/dp31"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        android:text="@string/user_name_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp5"
+        android:textSize="@dimen/sp24"
+        android:textColor="@color/dimGray"
+        android:text="@string/content_example"
+        android:id="@+id/content_timeline"
+        android:layout_marginEnd="@dimen/dp59"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_name"
+        app:layout_constraintStart_toStartOf="@id/user_name"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/item_row_background"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/anything_1"
+        android:src="@drawable/background_test"
+        app:layout_constraintEnd_toEndOf="@id/content_timeline"
+        app:layout_constraintStart_toStartOf="@id/content_timeline"
+        app:layout_constraintTop_toBottomOf="@id/content_timeline" />
+
+    <TextView
+        android:textColor="@color/dimGray"
+        android:textSize="@dimen/sp24"
+        android:text="@string/time_example"
+        android:layout_marginEnd="@dimen/dp56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/user_name"
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:layout_marginTop="@dimen/dp17"
+        android:id="@+id/like"
+        android:background="@drawable/like"
+        app:layout_constraintStart_toStartOf="@id/content_timeline"
+        app:layout_constraintTop_toBottomOf="@id/item_row_background"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp32" />
+
+    <TextView
+        android:textColor="@color/brightGrey"
+        android:id="@+id/like_number"
+        android:textSize="@dimen/sp24"
+        android:text="@string/like_example"
+        app:layout_constraintBottom_toBottomOf="@id/like"
+        android:layout_marginStart="@dimen/dp9"
+        app:layout_constraintStart_toEndOf="@id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/comment"
+        android:background="@drawable/ic_comment"
+        app:layout_constraintTop_toTopOf="@id/like"
+        android:layout_marginStart="@dimen/dp34"
+        app:layout_constraintStart_toEndOf="@id/like_number"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp33" />
+
+    <TextView
+        android:textColor="@color/brightGrey"
+        android:text="@string/comment_example"
+        app:layout_constraintBottom_toBottomOf="@id/like_number"
+        android:layout_marginStart="@dimen/dp9"
+        android:id="@+id/comment_number"
+        app:layout_constraintStart_toEndOf="@id/comment"
+        android:textSize="@dimen/sp24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginStart="@dimen/dp0"
+        android:layout_marginTop="@dimen/dp29"
+        android:layout_marginEnd="@dimen/dp59"
+        android:background="@color/spindle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/like_number" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/circle_view"
+        android:layout_marginStart="@dimen/dp46"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="@id/avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="@color/selectiveYellow"
+        app:cardCornerRadius="@dimen/dp14"
+        android:layout_width="@dimen/dp27"
+        android:layout_height="@dimen/dp29" />
+    
+    <View
+        android:id="@+id/bottom_circle"
+        android:layout_marginTop="@dimen/dp34"
+        android:background="@color/selectiveYellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/circle_view"
+        app:layout_constraintStart_toStartOf="@id/circle_view"
+        app:layout_constraintTop_toTopOf="@id/circle_view"
+        android:layout_width="@dimen/dp2"
+        android:layout_height="@dimen/dp0"/>
+
+    <View
+        android:id="@+id/top_circle"
+        app:layout_constraintEnd_toEndOf="@id/circle_view"
+        app:layout_constraintStart_toStartOf="@id/circle_view"
+        android:layout_marginBottom="@dimen/dp34"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/circle_view"
+        android:layout_width="@dimen/dp2"
+        android:layout_height="@dimen/dp0"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

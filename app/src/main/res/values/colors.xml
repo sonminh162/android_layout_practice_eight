@@ -3,6 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
 
     <color name="cloudBurst">#373D4A</color>
     <color name="paleOyster">#9D8C70</color>
@@ -21,6 +22,16 @@
     <color name="gulfBlue">#38415c</color>
     <color name="melrose">#c7b8f5</color>
     <color name="paynesGrey">#393c50</color>
+    <color name="dimGray">#676767</color>
+    <color name="spindle">#b7c2d5</color>
+    <color name="brightGrey">#515966</color>
+    <color name="navyBlue">#157ccc</color>
+    <color name="babyBlue">#b2ceff</color>
+    <color name="sunflowerYellow">#ffd800</color>
+    <color name="blueGrey">#009fadc4</color>
+    <color name="white10">#19ffffff</color>
+    <color name="selectiveYellow">#ffba00</color>
+
 
 
 </resources>

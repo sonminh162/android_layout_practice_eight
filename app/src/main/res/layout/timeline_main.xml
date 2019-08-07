@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timeline_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/navyBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_marginBottom="@dimen/dp27"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        android:layout_width="@dimen/dp41"
+        android:layout_height="@dimen/dp29"
+        android:layout_marginStart="@dimen/dp58"
+        android:background="@drawable/ic_menu"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp36"
+        android:layout_marginBottom="@dimen/dp19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        android:text="@string/title_timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:background="@drawable/edit_button"
+        android:layout_marginEnd="@dimen/dp58"
+        android:layout_marginBottom="@dimen/dp21"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="@dimen/dp42"
+        android:layout_height="@dimen/dp41" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timeline_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"></androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/p_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navyBlue">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#73000000" />
+
+    <!--Gradient-Start-->
+
+    <View
+        android:id="@+id/gradient_1"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/create_button"
+        app:layout_constraintStart_toStartOf="@id/input_left_line"
+
+        app:layout_constraintTop_toTopOf="@id/email_top_line" />
+
+    <View
+        android:id="@+id/gradient_2"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_1"
+        app:layout_constraintEnd_toEndOf="@id/gradient_1"
+        app:layout_constraintStart_toStartOf="@id/gradient_1"
+        app:layout_constraintTop_toTopOf="@id/gradient_1" />
+
+    <View
+        android:id="@+id/gradient_3"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_2"
+        app:layout_constraintEnd_toEndOf="@id/gradient_2"
+        app:layout_constraintStart_toStartOf="@id/gradient_2"
+        app:layout_constraintTop_toTopOf="@id/gradient_2" />
+
+    <View
+        android:id="@+id/gradient_4"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_3"
+        app:layout_constraintEnd_toEndOf="@id/gradient_3"
+        app:layout_constraintStart_toStartOf="@id/gradient_3"
+        app:layout_constraintTop_toTopOf="@id/gradient_3" />
+
+    <View
+        android:id="@+id/gradient_5"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_4"
+        app:layout_constraintEnd_toEndOf="@id/gradient_4"
+        app:layout_constraintStart_toStartOf="@id/gradient_4"
+        app:layout_constraintTop_toTopOf="@id/gradient_4" />
+
+    <View
+        android:id="@+id/gradient_6"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_5"
+        app:layout_constraintEnd_toEndOf="@id/gradient_5"
+        app:layout_constraintStart_toStartOf="@id/gradient_5"
+        app:layout_constraintTop_toTopOf="@id/gradient_5" />
+
+    <View
+        android:id="@+id/gradient_7"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_6"
+        app:layout_constraintEnd_toEndOf="@id/gradient_6"
+        app:layout_constraintStart_toStartOf="@id/gradient_6"
+        app:layout_constraintTop_toTopOf="@id/gradient_6" />
+
+    <View
+        android:id="@+id/gradient_8"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_7"
+        app:layout_constraintEnd_toEndOf="@id/gradient_7"
+        app:layout_constraintStart_toStartOf="@id/gradient_7"
+        app:layout_constraintTop_toTopOf="@id/gradient_7" />
+
+    <View
+        android:id="@+id/gradient_9"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_8"
+        app:layout_constraintEnd_toEndOf="@id/gradient_8"
+        app:layout_constraintStart_toStartOf="@id/gradient_8"
+        app:layout_constraintTop_toTopOf="@id/gradient_8" />
+
+    <View
+        android:id="@+id/gradient_10"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_9"
+        app:layout_constraintEnd_toEndOf="@id/gradient_9"
+        app:layout_constraintStart_toStartOf="@id/gradient_9"
+        app:layout_constraintTop_toTopOf="@id/gradient_9" />
+
+    <View
+        android:id="@+id/gradient_11"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_10"
+        app:layout_constraintEnd_toEndOf="@id/gradient_10"
+        app:layout_constraintStart_toStartOf="@id/gradient_10"
+        app:layout_constraintTop_toTopOf="@id/gradient_10" />
+
+    <View
+        android:id="@+id/gradient_12"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_11"
+        app:layout_constraintEnd_toEndOf="@id/gradient_11"
+        app:layout_constraintStart_toStartOf="@id/gradient_11"
+        app:layout_constraintTop_toTopOf="@id/gradient_11" />
+
+    <View
+        android:id="@+id/gradient_13"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_12"
+        app:layout_constraintEnd_toEndOf="@id/gradient_12"
+        app:layout_constraintStart_toStartOf="@id/gradient_12"
+        app:layout_constraintTop_toTopOf="@id/gradient_12" />
+
+    <View
+        android:id="@+id/gradient_14"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_13"
+        app:layout_constraintEnd_toEndOf="@id/gradient_13"
+        app:layout_constraintStart_toStartOf="@id/gradient_13"
+        app:layout_constraintTop_toTopOf="@id/gradient_13" />
+
+    <View
+        android:id="@+id/gradient_15"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_affect"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_14"
+        app:layout_constraintEnd_toEndOf="@id/gradient_14"
+        app:layout_constraintStart_toStartOf="@id/gradient_14"
+        app:layout_constraintTop_toTopOf="@id/gradient_14" />
+    <!--Gradient-End-->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo_icon"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="@id/logo_right"
+        app:layout_constraintStart_toStartOf="@id/logo_left"
+        app:layout_constraintTop_toTopOf="@id/logo_top" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:autofillHints=""
+        android:background="@drawable/input_box"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:paddingStart="@dimen/dp46"
+        android:text="@string/email"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintBottom_toTopOf="@id/email_bottom_line"
+        app:layout_constraintEnd_toEndOf="@id/input_right_line"
+        app:layout_constraintStart_toStartOf="@id/input_left_line"
+        app:layout_constraintTop_toBottomOf="@id/email_top_line"
+        tools:ignore="LabelFor,RtlSymmetry,TextFields" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:autofillHints=""
+        android:background="@drawable/input_box"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/dp46"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintBottom_toTopOf="@id/password_bottom_line"
+        app:layout_constraintEnd_toEndOf="@id/email"
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toTopOf="@id/password_top_line"
+        tools:ignore="LabelFor,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/login_real"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:background="@drawable/login_box"
+        android:gravity="center_vertical"
+        android:text="@string/login_button"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintBottom_toBottomOf="@id/login_bottom_line"
+        app:layout_constraintEnd_toEndOf="@id/email"
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/login_top_line" />
+
+    <View
+        android:id="@+id/or_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/or_line" />
+
+    <View
+        android:id="@+id/or_border"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:background="@color/navyBlue"
+        app:layout_constraintBottom_toTopOf="@id/create_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_real" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:background="#73000000"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintBottom_toBottomOf="@id/or_border"
+        app:layout_constraintEnd_toEndOf="@id/or_border"
+        app:layout_constraintStart_toStartOf="@id/or_border"
+        app:layout_constraintTop_toTopOf="@id/or_border" />
+
+    <TextView
+        android:id="@+id/create_button"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:background="@drawable/create_account_box"
+        android:gravity="center_vertical"
+        android:text="@string/create_account"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintBottom_toBottomOf="@id/create_bottom_line"
+        app:layout_constraintEnd_toEndOf="@id/email"
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/create_top_line" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/input_left_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/input_right_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9118136" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/password_top_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50727654" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/password_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5914761" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_top_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6101871" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/create_top_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7889813" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/create_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/or_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/email_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/email_top_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logo_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logo_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logo_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13825364" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
